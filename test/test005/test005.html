@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula a dor</title>
+    <style>
+        body, html {
+            height: 98vh;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        main {
+            height: 98vh;
+            width: 700px;
+            margin: auto;
+            background-color: white;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Como somar de uma forma rápida e fácil</h1>
+        <input type="number" name="txt01" id="txt01"> +
+        <input type="number" name="txt02" id="txt02">
+        <input type="button" value="somar" onclick="somar()">
+        <div id="res">Resultado:</div>
+    </main>
+
+    <script>
+        function somar() {
+            var numero01 = window.document.querySelector('input#txt01')
+            var numero02 = window.document.querySelector('input#txt02')
+            var res = window.document.querySelector('div#res')
+            var n1 = Number(numero01.value)
+            var n2 = Number(numero02.value)
+            var s = n1 + n2
+            res.innerHTML = `Resultado da soma entre ${n1} e ${n2} será: ${s}`
+        }
+    </script>
+</body>
+</html>
