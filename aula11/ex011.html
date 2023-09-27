@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBGE</title>
+</head>
+<body>
+    <h1>Sistema de nacionalidades</h1>
+    Sua nacionalidade é: <input type="text" name="texto" id="texto">
+    <input type="button" value="calcular" onclick="calcular()">
+    <div id="res">Resultado</div>
+
+    <script>
+        function calcular() {
+            var txt = window.document.querySelector('input#texto')
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = 'amor por ser brasileiro'
+            if (txt != 'Brasil') {
+                res.innerHTML = 'sai daqui esrtrangeiro safado'
+            }
+        }
+    </script>
+</body>
+</html>
